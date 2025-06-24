@@ -34,5 +34,14 @@
     padding: 6vh;
     position: relative;
     width: 80vh;
-    bottom: -15vh;
+    bottom: -15vh; 
+}
+
+.contador {
+    /* background-color: aqua; */
+    position: relative;
+    margin-left: 93vh;
+    width: 5vh;
+    color: cadetblue;
+    bottom: 9vh;
 }
