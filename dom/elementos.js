@@ -86,18 +86,27 @@
 //     elemento = document.getElementById('lista');
 //     elemento.parentNode.removeChild(elemento);
 // }
-
+document.getElementById('descripcion').addEventListener('input', function() {
+        document.getElementById('contador').textContent = document.getElementById('descripcion').value.length;
+});
 function formulario() {
     form = document.getElementById('documento'); // obtener todos los elementos del documento html para manipularlo 
 
     if (form.nombre.value == '') {
         alert('Debes de digitar un titulo');
+        return;
     }
 
     if (form.descripcion.value == '') {
         alert('Debe digitar una descripcion');
+        return;
     }
+    
+    
+    document.getElementById('contador').textContent = 
+
     document.getElementById('tarjeta').className = 'target';
+    document.getElementById('contador').className = 'contador';
     document.getElementById('title').textContent = form.nombre.value;
     document.getElementById('description').textContent = form.descripcion.value;
 
