@@ -1,0 +1,21 @@
+css 
+
+display: none; // oculta un elemento 
+opciones en el display:
+
+block =	El elemento ocupa todo el ancho disponible (como <div>, <p>, etc.).
+inline = El elemento no hace salto de línea y solo ocupa su contenido (como <span>).
+inline-block =	Como inline, pero permite aplicar tamaño y márgenes.
+none =	Oculta el elemento completamente, no aparece ni ocupa espacio.
+flex =	Convierte el contenedor en un flexbox, útil para diseño adaptable.
+grid =	Convierte el contenedor en una rejilla (grid) para diseños avanzados.
+
+para colocarle estilos a etiquetas especiales 
+
+usamos directamente el nombre de la etiqueta
+
+ejem: 
+elemento body del html
+en el css usamos 
+
+body {}

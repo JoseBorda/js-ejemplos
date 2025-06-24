@@ -1,0 +1,43 @@
+Las etiquetes (elementos) de html deben de tener un id (identificador) 
+para poder ser manipulado por Javascript 
+
+ejemplo: 
+HTML
+<div class='ejemplo1'>Ejemplo de un elemento para ser manipulado por el DOM'</div>
+
+CSS
+
+.class {
+  background-color: green; // clase que vamos a usar en los elementos
+
+}
+
+JS 
+
+function cambiarColor() {
+  form = document.getElementById('ejemplo1'); // obtenemos el elemento de html con el nombre de id
+  form.className = 'red'; // para cambiar la clase que esta usando el elemento en el html
+}
+
+createElement = crea nuevos elementos HTML pero no se visualiza en el documento HTML
+
+appendChild agrega el elemento dentro de otro elemento existente 
+
+textContent = leer o cambiar texto dentro de un elemento html
+document.getElementById('id').textContent; -> esto permite leer el contenido que tiene un elemento html
+document.getElementById('id').textContent = 'Nuevo contenido'; -> esto permite reemplazar el contenido del elemento html
+
+
+
+============================================
+
+Para eliminar un elemento html 
+
+remove para eliminar un elemento fijo
+removeChild necesita saber cual es el elemento padre - elimina todos los elementos del elemento padre
+
+===============================
+
+form = documento.getElementById('formulario');
+
+form.name.value -> se puede acceder asi siempre y cuando tenga el elemento la etiquta name y no este repetida
